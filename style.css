@@ -1,7 +1,25 @@
-header {
-  padding: 40px;
-  text-align: left;
-  background: #f9f7f7;
-  margin: 30px;
-  font-size: 20px;
+#left-img img {
+  width: 28px;
+  height: 32px;
+}
+header::after {
+  display: inline-block;
+  content: "";
+  border-top: 0.3rem solid black;
+  width: 4rem;
+  margin: 0 1rem;
+  transform: translateY(-1rem);
+}
+header:after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  height: 1px;
+  width: 500px;
+  background: #000;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
 }
